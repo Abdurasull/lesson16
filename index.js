@@ -2,6 +2,7 @@ const elRow = document.querySelector(".js-row");
 const elTemplate = document.querySelector(".js-temp").content;
 const elRegion = document.querySelector(".js-region-list");
 const elInput = document.querySelector(".js-input");
+const elDark = document.querySelector(".Dark1");
 
 const collFetch = async () => {
     const response = await fetch("https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital");
@@ -73,5 +74,17 @@ elInput.addEventListener("change", (evt) => {
             renderCountryName(countries, selectCountry);
         })
 
+    }
+})
+
+
+elDark.addEventListener("click", (evt) => {
+    document.body.classList.toggle('dark');
+
+     // Tugma matnini o'zgartirish
+    if (document.body.classList.contains('dark')) {
+        elDark.textContent = '☀️ Light Mode';
+    } else {
+        elDark.textContent = '🌙 Dark Mode';
     }
 })

@@ -2,9 +2,52 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #202C36;
+    /*  */
 }
 
+body{
+    background-color: #202C36;
+    transition: 0.1s;
+}
+
+body.dark {
+    background-color: #f5f7f8;
+}
+.Dark1{
+    background-color: #2B3844;
+    cursor: pointer;
+}
+body.dark .Dark1{
+    background-color: white;
+    color: black;
+}
+
+body.dark .dark_Con{
+    background-color: white;
+}
+.dark_Con{
+    background-color: #2B3844;
+    transition: 0.1s;
+}
+.dark_Con h5{
+    color: white;
+    background-color: #2B3844;
+    transition: 0.1s;
+}
+body.dark .dark_Con h5{
+    color: black;
+    background-color: white;
+}
+.pop1{
+    display: inline;
+    background-color: #2B3844;
+    color: white;
+    transition: 0.1s;
+}
+body.dark .pop1{
+    background-color: white;
+    color: black;
+}
 header{
     height: 80px;
     background-color: #2B3844;
@@ -15,13 +58,21 @@ header{
     align-items: center;
     padding: 0 20px;
 }
+body.dark header{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px 1px gray;
+}
 h2{
     color: white;
     font-weight: 800;
     size: 24px;
     latter-spacing: 0px;
     margin-left: 10px;
-    background-color: #2B3844;
+    transition: 0.1s;
+}
+body.dark h2{
+    color: black;
 }
 .card-text1{
     color: rgb(156, 153, 153);
@@ -32,6 +83,12 @@ h2{
     background-color: #2B3844;
     display: inline;
     font-size: small;
+    transition: 0.1s;
+}
+
+body.dark .card-text1{
+    background-color: white;
+    color: gray;
 }
 main{
     padding: 20px 30px;
@@ -59,6 +116,9 @@ input::placeholder{
     line-height: 100%;
     latter-spacing: 0px;
 }
+body.dark input::placeholder{
+    color: black;
+}
 .dropdown-menu{
     width: 200px;
     background-color: #2B3844;
@@ -76,13 +136,22 @@ input::placeholder{
     align-items: center;
     border-radius: 5;
 }
+body.dark .btn{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px 1px gray;
+}
 .container{
     padding: 0;
 }
 .country{
     margin: 0;
 }
-.dropdown-item:hover{
-    background-color: black;
+body.dark .js-input{
+    background-color: white;
+    box-shadow: 0 0 10px 1px gray;
+    color: black;
 }
-
+body.dark .card{
+    box-shadow: 0 0 10px 1px gray;
+}
