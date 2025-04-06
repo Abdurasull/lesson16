@@ -11,8 +11,8 @@
 <body>
     <header>
         <h2>Where in the world?</h2>
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+        <p class="Dark1" style="background-color: #2B3844;">
+            <svg style="background-color: #2B3844;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
             <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
             </svg>    
             Dark Mode 
@@ -23,34 +23,40 @@
         <!-- region qismini copy qilish ichun boshlandi-->
         <template class="js-temp">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card  m-4" style="width: 18rem;">
-                        <img src="..." class="js-flag card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="js-name card-title ">Заголовок карточки</h5>
-                            <p class="js-official card-text " style="color: rgb(59, 58, 58);">Небольшой пример текста, который должен основываться на названии карты и составлять основную часть содержимого карты.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="js-region list-group-item">Элемент</li>
-                        </ul>
+                <div class="card  m-4" style="width: 18rem;">
+                    <img src="..." class="js-flag card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #2B3844;">
+                        <h5 class="js-name card-title " style="color: white; background-color: #2B3844;"></h5>
+                        
+                        <p style="color: white; display: inline; background-color: #2B3844;">Population: </p>
+                        <p class="js-Population card-text card-text1 " ></p>
+                        <br>
+                        <p style="color: white; display: inline; background-color: #2B3844;">Region: </p>
+                        <p class="js-region card-text card-text1"></p>
+                        <br>
+                        <p style="color: white; display: inline; background-color: #2B3844;">Capital: </p>
+                        <p class="js-Capital card-text card-text1"></p>
+                    </ul>
                     </div>
+                    <!-- <ul class="list-group list-group-flush">
+                        <li class="js-region list-group-item"></li>
+                    </ul> -->
                 </div>
+            </div>
         </template>
         <!-- region qismini copy qilish ichun tugadi-->
         
         <section class="js-search-block">
             <input class="js-input" type="text" placeholder="Search for a country…">
             <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    Filter by Region
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" style="color: white;" href="#">Africa</a></li>
-                    <li><a class="dropdown-item" style="color: white;" href="#">Asia</a></li>
-                    <li><a class="dropdown-item" style="color: white;" href="#">Americas</a></li>
-                    <li><a class="dropdown-item" style="color: white;" href="#">Europe</a></li>
-                    <li><a class="dropdown-item" style="color: white;" href="#">Oceania</a></li>
-                </ul>
+                <select class="js-region-list btn btn-secondary dropdown-toggle" >
+                    <option disabled selected hidden>Filter by Region</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
             </div>
         </section>
         <section class="container">

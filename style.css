@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #202C36;
 }
 
 header{
@@ -20,17 +21,19 @@ h2{
     size: 24px;
     latter-spacing: 0px;
     margin-left: 10px;
+    background-color: #2B3844;
 }
-p{
-    color: white;
+.card-text1{
+    color: rgb(156, 153, 153);
     font-weight: 600;
-    size: 16px;
+    size: 14px;
     line-height: 100%;
     latter-spacing: 0px;
+    background-color: #2B3844;
+    display: inline;
+    font-size: small;
 }
 main{
-    background-color: #202C36;
-    height: 100dvh;
     padding: 20px 30px;
 }
 .js-search-block{
@@ -82,3 +85,4 @@ input::placeholder{
 .dropdown-item:hover{
     background-color: black;
 }
+
